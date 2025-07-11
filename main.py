@@ -66,7 +66,7 @@ async def ai_help(req: HelpRequest):
         return {"type": "info", "content": "✅ Your application has been saved for later."}
     elif choice == "explain_product":
         return {"type": "info", "content": "This product gives you easy access to checking and digital banking tools."}
-	 elif req.choice == "product_help":
+    elif req.choice == "product_help":
     return {
         "type": "info",
         "content": (
