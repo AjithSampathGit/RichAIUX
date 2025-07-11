@@ -67,14 +67,14 @@ async def ai_help(req: HelpRequest):
     elif choice == "explain_product":
         return {"type": "info", "content": "This product gives you easy access to checking and digital banking tools."}
     elif req.choice == "product_help":
-    return {
-        "type": "info",
-        "content": (
-            "🧾 Here's a quick breakdown:\n\n"
-            "**Checking Account:** Great for daily transactions, no interest but easy access to money.\n\n"
-            "**Savings Account:** Ideal for storing money long-term, earns interest, limited withdrawals.\n\n"
-            "Still unsure? We can connect you with a banker!"
-        )
-    }
+        return {
+            "type": "info",
+            "content": (
+                "🧾 Here's a quick breakdown:\n\n"
+                "**Checking Account:** Great for daily transactions, no interest but easy access to money.\n\n"
+                "**Savings Account:** Ideal for storing money long-term, earns interest, limited withdrawals.\n\n"
+                "Still unsure? We can connect you with a banker!"
+            )
+        }
     else:
         return {"type": "info", "content": "We’re here to help!"}
