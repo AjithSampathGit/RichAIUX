@@ -28,7 +28,7 @@ class InteractionLog(BaseModel):
     user_state: str
     action_taken: str
 
-	 @app.post("/ai-suggestion")
+@app.post("/ai-suggestion")
 async def ai_suggestion(req: StepRequest):
     user_states = ["idle", "confused", "interested", "disinterested", "fraudulent"]
     user_state = random.choices(user_states, weights=[2, 2, 2, 2, 1])[0]  # Low chance of fraud
